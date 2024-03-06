@@ -9,13 +9,6 @@ body {
   max-width: 100%;
 }
 
-h1,
-h2,
-h3 {
-  text-align: center;
-  margin: 0;
-}
-
 h1 {
   font-size: 96px;
 }
@@ -30,12 +23,10 @@ h3 {
 }
 
 p {
-  background: var(--secondary-color);
   padding: 20px;
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;
 }
 
 .navigation-links {
@@ -97,4 +88,23 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .primary-link {
+    display: block;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
 }
